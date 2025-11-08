@@ -1,9 +1,9 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 
-// Import your translation files
-import enTranslation from '../public/locales/en/translation.json'
-import zhTranslation from '../public/locales/zh/translation.json'
+// Import your translation files from the src directory
+import enTranslation from './locales/en/translation.json'
+import zhTranslation from './locales/zh/translation.json'
 
 i18n.use(initReactI18next).init({
   resources: {
