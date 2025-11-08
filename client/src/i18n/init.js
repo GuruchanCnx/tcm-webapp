@@ -1,16 +1,20 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
 
-// Import your translation files from the src directory
-import enTranslation from './locales/en/translation.json'
-import zhTranslation from './locales/zh/translation.json'
+// Simple English-only translation
+const enTranslation = {
+  "appTitle": "Chinese Materia Medica",
+  "herbBrowser": "Herb Library", 
+  "formulaBuilder": "Formula Builder",
+  "learningCenter": "Case Studies",
+  "languageToggle": "English"
+}
 
 i18n.use(initReactI18next).init({
   resources: {
-    en: { translation: enTranslation },
-    zh: { translation: zhTranslation }
+    en: { translation: enTranslation }
   },
-  lng: 'en', // Default language
+  lng: 'en', // Default and only language
   fallbackLng: 'en',
   interpolation: {
     escapeValue: false
